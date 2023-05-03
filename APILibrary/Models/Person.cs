@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace APILibrary.Models
 {
-    internal class Person
+    public class Person
     {
         [Key]
         public int PersonID { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string FirstName { get; set; }
         [Required]
-        public string Phone { get; set; }
+        public string LastName { get; set; }
+        [Required]
+        public int Phone { get; set; }
     }
 }

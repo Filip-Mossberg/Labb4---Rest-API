@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace APILibrary.Models
 {
-    internal class Hobby
+    public class Hobby
     {
         [Key]
         public int HobbyID { get; set; }
+        [Required]
         public string Title { get; set; }
         public string Description { get; set; } 
     }

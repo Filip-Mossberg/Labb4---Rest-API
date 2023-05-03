@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace APILibrary.Models
 {
-    internal class Link
+    public class Link
     {
         [Key]
         public int LinkID { get; set; }
         [Required]
-        public string Url { get; set; }
-        public string Description { get; set; }
+        public string LinkName { get; set; }
+        [Required]
+        public string URL { get; set; }
     }
 }
