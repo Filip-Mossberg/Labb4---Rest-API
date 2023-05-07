@@ -3,6 +3,7 @@ using Labb4___Rest_API.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Labb4___Rest_API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230504124504_First-Creation")]
+    partial class FirstCreation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -342,7 +345,7 @@ namespace Labb4___Rest_API.Migrations
                         {
                             PersonHobbyID = 10,
                             HobbyID = 3,
-                            LinkID = 5,
+                            LinkID = 1,
                             PersonID = 1
                         },
                         new
@@ -356,7 +359,7 @@ namespace Labb4___Rest_API.Migrations
                         {
                             PersonHobbyID = 12,
                             HobbyID = 4,
-                            LinkID = 8,
+                            LinkID = 1,
                             PersonID = 1
                         },
                         new
@@ -370,14 +373,14 @@ namespace Labb4___Rest_API.Migrations
                         {
                             PersonHobbyID = 14,
                             HobbyID = 3,
-                            LinkID = 2,
+                            LinkID = 6,
                             PersonID = 6
                         },
                         new
                         {
                             PersonHobbyID = 15,
                             HobbyID = 1,
-                            LinkID = 9,
+                            LinkID = 6,
                             PersonID = 6
                         });
                 });

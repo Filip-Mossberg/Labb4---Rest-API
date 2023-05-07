@@ -56,7 +56,12 @@ namespace Labb4___Rest_API.Models
             modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 7, HobbyID = 3, PersonID = 7, LinkID = 7 });
             modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 8, HobbyID = 4, PersonID = 8, LinkID = 8 });
             modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 9, HobbyID = 1, PersonID = 9, LinkID = 9 });
-            modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 10, HobbyID = 2, PersonID = 10, LinkID = 10 });
+            modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 10, HobbyID = 3, PersonID = 1, LinkID = 5 });
+            modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 11, HobbyID = 1, PersonID = 4, LinkID = 4 });
+            modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 12, HobbyID = 4, PersonID = 1, LinkID = 8 });
+            modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 13, HobbyID = 2, PersonID = 8, LinkID = 8 });
+            modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 14, HobbyID = 3, PersonID = 6, LinkID = 2 });
+            modelBuilder.Entity<PersonHobby>().HasData(new PersonHobby { PersonHobbyID = 15, HobbyID = 1, PersonID = 6, LinkID = 9 });
         }
     }
 }
